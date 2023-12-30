@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Blackjack</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">
+                <span class="title-letter">B</span>
+                <span class="title-letter">L</span>
+                <span class="title-letter">A</span>
+                <span class="title-letter">C</span>
+                <span class="title-letter">K</span>
+                <span class="title-letter">J</span>
+                <span class="title-letter">A</span>
+                <span class="title-letter">C</span>
+                <span class="title-letter">K</span>
+            </h1>
+            <h2 id="msg-el">Want to play a round?</h2>
+            <div class="btn-group">
+                <button type="button" class="btn" id="play-btn">Play</button>
+                <button type="button" class="btn" id="draw-card-btn" disabled>
+                    Draw Card?
+                </button>
+                <button type="button" class="btn" id="replay-btn">
+                    Play Again?
+                </button>
+            </div>
+            <div class="card-container">
+                <h2>Cards:</h2>
+                <ul id="card-list"></ul>
+            </div>
+            <h2>Sum: <span id="sum-val"></span></h2>
+        </div>
+        <div class="modal" id="popup">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <p id="popup-message"></p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
